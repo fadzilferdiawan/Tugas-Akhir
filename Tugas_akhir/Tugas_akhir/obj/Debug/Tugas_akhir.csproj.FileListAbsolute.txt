@@ -1,0 +1,12 @@
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\bin\Debug\Tugas_akhir.exe.config
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\bin\Debug\Tugas_akhir.exe
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\bin\Debug\Tugas_akhir.pdb
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.csprojAssemblyReference.cache
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.Form1.resources
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.Properties.Resources.resources
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.csproj.GenerateResource.cache
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.csproj.CoreCompileInputs.cache
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.exe
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.pdb
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.UserControl1.resources
+C:\Users\FADZIL FERDIAWAN\source\repos\Tugas_akhir\Tugas_akhir\obj\Debug\Tugas_akhir.UserControl2.resources
