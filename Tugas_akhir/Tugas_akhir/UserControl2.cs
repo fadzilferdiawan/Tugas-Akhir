@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.CompilerServices;
 
 namespace Tugas_akhir
 {   
     public partial class UserControl2 : UserControl
     {
-        float duit = 0;
+        float duit, brokoli, paprika, apel;
         public UserControl2()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace Tugas_akhir
 
         private void apel_Click(object sender, EventArgs e)
         {
-            float apel, japel;
+            float japel;
             apel = float.Parse(this.jmlapel.Text);
             japel = apel * 25000;
             duit += japel;
@@ -29,7 +30,7 @@ namespace Tugas_akhir
 
         private void paprika_Click(object sender, EventArgs e)
         {
-            float paprika, jpaprika;
+            float jpaprika;
             paprika = float.Parse(this.jmlpaprika.Text);
             jpaprika = paprika * 5000;
             duit += jpaprika;
@@ -38,11 +39,24 @@ namespace Tugas_akhir
 
         private void brokoli_click(object sender, EventArgs e)
         {
-            float brokoli, jbrokoli;
+            float jbrokoli;
             brokoli = float.Parse(this.jmlbrokoli.Text);
             jbrokoli = brokoli * 12000;
             duit += jbrokoli;
             this.total.Text = Convert.ToString(duit);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            if (String.IsNullOrEmpty(jmlapel.Text))
+                button1.Enabled = false;
+            else
+                button1.Enabled = true;
+        }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void bayar_click(object sender, EventArgs e)
@@ -63,7 +77,18 @@ namespace Tugas_akhir
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+            if (String.IsNullOrEmpty(jmlpaprika.Text))
+                button2.Enabled = false;
+            else
+                button2.Enabled = true;
+        }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            if (String.IsNullOrEmpty(jmlbrokoli.Text))
+                button5.Enabled = false;
+            else
+                button5.Enabled = true;
         }
     }
 }

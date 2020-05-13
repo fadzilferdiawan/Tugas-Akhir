@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.sidepanel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
             this.catalog = new System.Windows.Forms.Button();
             this.home = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,10 +47,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.sidepanel);
-            this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.catalog);
             this.panel1.Controls.Add(this.home);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -63,36 +57,6 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Cocogoose", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(3, 391);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(25, 25);
-            this.button11.TabIndex = 0;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Cocogoose", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(3, 415);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(25, 25);
-            this.button10.TabIndex = 0;
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button1_Click);
-            // 
             // sidepanel
             // 
             this.sidepanel.BackColor = System.Drawing.Color.ForestGreen;
@@ -100,21 +64,6 @@
             this.sidepanel.Name = "sidepanel";
             this.sidepanel.Size = new System.Drawing.Size(10, 50);
             this.sidepanel.TabIndex = 5;
-            // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Cocogoose", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(3, 438);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(25, 25);
-            this.button9.TabIndex = 0;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button1_Click);
             // 
             // catalog
             // 
@@ -246,9 +195,6 @@
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Button home;
         public System.Windows.Forms.Button catalog;
-        public System.Windows.Forms.Button button9;
-        public System.Windows.Forms.Button button10;
-        public System.Windows.Forms.Button button11;
         public System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.Panel sidepanel;

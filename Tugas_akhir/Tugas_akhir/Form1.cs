@@ -97,9 +97,5 @@ namespace Tugas_akhir
             panel4.Controls.Add(uc);
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
