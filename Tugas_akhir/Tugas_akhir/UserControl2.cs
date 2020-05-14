@@ -22,8 +22,11 @@ namespace Tugas_akhir
 
         private void apel_Click(object sender, EventArgs e)
         {
-
-            float apel;
+            if (japel != 0)
+            {
+                duit -= japel;
+            }
+                float apel;
             apel = float.Parse(this.jmlapel.Text);
             japel = apel * 25000;
             duit += japel;
@@ -32,6 +35,10 @@ namespace Tugas_akhir
 
         private void paprika_Click(object sender, EventArgs e)
         {
+            if (jpaprika != 0)
+            {
+                duit -= jpaprika;
+            }
             float paprika;
             paprika = float.Parse(this.jmlpaprika.Text);
             jpaprika = paprika * 5000;
@@ -41,6 +48,10 @@ namespace Tugas_akhir
 
         private void brokoli_click(object sender, EventArgs e)
         {
+            if (jbrokoli != 0)
+            {
+                duit -= jbrokoli;
+            }
             float brokoli;
             brokoli = float.Parse(this.jmlbrokoli.Text);
             jbrokoli = brokoli * 12000;
