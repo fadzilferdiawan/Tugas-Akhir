@@ -13,7 +13,8 @@ namespace Tugas_akhir
 {   
     public partial class UserControl2 : UserControl
     {
-        float duit, brokoli, paprika, apel;
+        float duit, japel, jpaprika, jbrokoli;
+
         public UserControl2()
         {
             InitializeComponent();
@@ -21,7 +22,8 @@ namespace Tugas_akhir
 
         private void apel_Click(object sender, EventArgs e)
         {
-            float japel;
+
+            float apel;
             apel = float.Parse(this.jmlapel.Text);
             japel = apel * 25000;
             duit += japel;
@@ -30,7 +32,7 @@ namespace Tugas_akhir
 
         private void paprika_Click(object sender, EventArgs e)
         {
-            float jpaprika;
+            float paprika;
             paprika = float.Parse(this.jmlpaprika.Text);
             jpaprika = paprika * 5000;
             duit += jpaprika;
@@ -39,7 +41,7 @@ namespace Tugas_akhir
 
         private void brokoli_click(object sender, EventArgs e)
         {
-            float jbrokoli;
+            float brokoli;
             brokoli = float.Parse(this.jmlbrokoli.Text);
             jbrokoli = brokoli * 12000;
             duit += jbrokoli;
@@ -61,17 +63,24 @@ namespace Tugas_akhir
 
         private void bayar_click(object sender, EventArgs e)
         {
-            float bayar, kembali;
-            bayar = float.Parse(this.bayar.Text);
-            kembali = bayar - duit;
-            this.kembali.Text = Convert.ToString(kembali);
-            if (kembali < 0)
+            if (string.IsNullOrEmpty(this.bayar.Text))
             {
-                keterangan.Text = Convert.ToString("Maaf Uang Anda Kurang");
+                this.keterangan.Text = Convert.ToString("Masukkan Jumlah uang yang dibayarkan");
             }
             else
             {
-                keterangan.Text = Convert.ToString("Silahkan Berbelanja Kembali");
+                float bayar, kembali;
+                bayar = float.Parse(this.bayar.Text);
+                kembali = bayar - duit;
+                this.kembali.Text = Convert.ToString(kembali);
+                if (kembali < 0)
+                {
+                    keterangan.Text = Convert.ToString("Maaf Uang Anda Kurang");
+                }
+                else
+                {
+                    keterangan.Text = Convert.ToString("Silahkan Berbelanja Kembali");
+                }
             }
         }
 
